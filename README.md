@@ -5,4 +5,4 @@
     
 ## 2.输入`cp ~/Vim/vimrc ~/.vimrc`
 
-## 3.输入`vim ~/.vimrc`看到错误提示不用管，直接按回车再输入`:PlugInstall`再输入`:q`再输入`source ~/.vimrc`再输入`rm -rf ~/Vim`即可  
+## 3.输入`vim ~/.vimrc`看到错误提示不用管，直接按回车再输入`:PlugInstall`等待顶部显示安装完成后再输入`:q`再输入`source ~/.vimrc`再输入`rm -rf ~/Vim`即可  
