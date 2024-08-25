@@ -5,7 +5,7 @@
 ## 1.输入以下内容下载并安装配置文件(默认是Bash)
 
 ```bash
-git clone https://github.com/DarcyJason/Vim.git && cd ~ && bash ~/Vim/install.sh
+cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
 
 ## 2.先关闭左侧文件导航栏
