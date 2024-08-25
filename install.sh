@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf ~/.vimrc
+
 cd && git clone https://github.com/DarcyJason/Vim.git
 
 cat ~/Vim/README.md
