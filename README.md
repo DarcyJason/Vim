@@ -8,6 +8,11 @@
 cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
 
+## 2.进入~/.vimrc文件
+```bash
+vim ~/.vimrc
+```
+
 ## 2.先关闭左侧文件导航栏
 ```bash
 :q
