@@ -12,4 +12,6 @@ cp ~/Vim/vimrc ~/.vimrc
 
 rm -rf ~/Vim
 
-vim -u ~/.vimrc
+vim -u ~/.vimrc -c "q"
+
+vim ~/.vimrc -c "source % | PlugInstall | wq"
