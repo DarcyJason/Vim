@@ -2,19 +2,13 @@
 
 请确保你的电脑安装了vim和curl
 
-## 1.输入以下内容下载(默认是Bash)
+## 1.输入以下内容下载并安装配置文件(默认是Bash)
 
 ```bash
-git clone https://github.com/DarcyJason/Vim.git
+git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
 
-## 2.执行安装脚本
-
-```bash
-bash ~/Vim/install.sh
-```
-
-## 3.先关闭左侧文件导航栏
+## 2.先关闭左侧文件导航栏
 ```bash
 :q
 ```
