@@ -19,5 +19,5 @@ bash ~/Vim/install.sh
 
 ## 3.等待插件安装完成后即可
 ```bash
-:wqa
+:qa
 ```
