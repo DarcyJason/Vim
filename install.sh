@@ -12,4 +12,4 @@ rm -rf ~/Vim
 
 vim -u ~/.vimrc -c "q"
 
-vim ~/.vimrc -c "source % | PlugInstall | wq"
+vim ~/.vimrc -c "source % | PlugInstall | wqa"
