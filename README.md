@@ -8,28 +8,12 @@
 cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
 
-## 2.进入~/.vimrc文件
+## 2.安装配置
 ```bash
 vim ~/.vimrc
 ```
 
-## 2.先关闭左侧文件导航栏
+## 3.先关闭左侧文件导航栏并开始安装
 ```bash
-:q
-```
-
-## 3.输入以下内容使配置生效
-
-```bash
-:source %
-```
-
-## 4.输入以下内容安装插件
-```bash
-:PlugInstall
-```
-
-## 5.等待插件安装完成后即可
-```bash
-:qa
+:q | source % | PlugInstall | qa
 ```
