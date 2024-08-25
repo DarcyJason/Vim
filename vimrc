@@ -7,6 +7,9 @@ Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'johngrib/vim-game-snake'
+Plug 'ashyisme/2048'
+Plug 'vim-scripts/TeTrIs.vim'
 
 call plug#end()
 
@@ -31,3 +34,11 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+set encoding=utf-8
+set fileencoding=utf-8
+set termencoding=utf-8
+
+set formatoptions+=t
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
