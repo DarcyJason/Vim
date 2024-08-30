@@ -10,6 +10,8 @@ Plug 'honza/vim-snippets'
 Plug 'johngrib/vim-game-snake'
 Plug 'ashyisme/2048'
 Plug 'vim-scripts/TeTrIs.vim'
+Plug 'preservim/nerdcommenter'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -35,10 +37,10 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 set encoding=utf-8
-set fileencoding=utf-8
+set fileencodings=utf-8,gb2312,gbk,cp936,gb18030,ucs-bom
 set termencoding=utf-8
 
-set formatoptions+=t
+set number
+
+set autoindent
 set shiftwidth=2
-set softtabstop=2
-set tabstop=2
