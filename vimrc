@@ -1,16 +1,22 @@
 call plug#begin('~/.vim/plugged')
 
+" 文件系统浏览器
 Plug 'preservim/nerdtree'
+" 状态栏
 Plug 'vim-airline/vim-airline'
+" 主题
 Plug 'vim-airline/vim-airline-themes'
-Plug 'dense-analysis/ale'
+" 自动补全
 Plug 'jiangmiao/auto-pairs'
+" 代码片段管理
 Plug 'SirVer/ultisnips'
+" 代码片段库
 Plug 'honza/vim-snippets'
+" 贪吃蛇
 Plug 'johngrib/vim-game-snake'
-Plug 'ashyisme/2048'
-Plug 'vim-scripts/TeTrIs.vim'
+" 代码注释
 Plug 'preservim/nerdcommenter'
+" 智能补全
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
@@ -22,11 +28,6 @@ let NERDTreeWinSize=25
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#mode#enabled = 1
 let g:airline_theme='molokai'
-
-let g:ale_enabled = 1
-let g:ale_linters = {'rust':['clippy', 'rustc'], 'c': ['gcc', 'clang'], 'cpp': ['g++', 'clang++'], 'java': ['javac'], 'python': ['flake8', 'pylint'], 'go': ['golangci-lint'], 'html': ['htmlhint'], 'css': ['stylelint'], 'javascript': ['eslint']}
-let g:ale_lint_on_enter = 1
-let g:ale_lint_on_text_changed = 'always'
 
 
 inoremap <Del> <C-h>
@@ -44,3 +45,5 @@ set number
 
 set autoindent
 set shiftwidth=2
+
+nmap <silent> <leader>e :CocList diagnostics<CR>
