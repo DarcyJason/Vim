@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-
 " 文件系统浏览器
 Plug 'preservim/nerdtree'
 " 状态栏
@@ -18,7 +17,8 @@ Plug 'johngrib/vim-game-snake'
 Plug 'preservim/nerdcommenter'
 " 智能补全
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+" Dash
+Plug 'rizzatti/dash.vim'
 call plug#end()
 
 autocmd vimenter * NERDTree
@@ -28,7 +28,6 @@ let NERDTreeWinSize=25
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#mode#enabled = 1
 let g:airline_theme='molokai'
-
 
 inoremap <Del> <C-h>
 set backspace=2
@@ -47,3 +46,21 @@ set autoindent
 set shiftwidth=2
 
 nmap <silent> <leader>e :CocList diagnostics<CR>
+
+let g:dash_app_path = '/Applications/Dash.app'
+let g:dash_mapping = '<leader>d'
+let g:dash_keyword_filetype_map = {
+    \ 'c': ['c'],
+    \ 'cpp': ['cpp', 'boost'],
+    \ 'java': ['java'],
+    \ 'python': ['python3', 'django'],
+    \ 'html': ['html'],
+    \ 'css': ['css'],
+    \ 'javascript': ['javascript', 'nodejs'],
+    \ 'go': ['go'],
+    \ 'rust': ['rust']
+    \ }
+
+autocmd BufWritePost * NERDTreeRefreshRoot
+autocmd FocusGained * NERDTreeRefreshRoot
+autocmd BufEnter * if bufname("#") == "NERD_tree_1" | execute ":NERDTreeRefreshRoot" | endif
