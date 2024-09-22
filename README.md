@@ -1,6 +1,6 @@
 # 使用方法
 
-请确保你的电脑安装了git、curl和vim
+请确保你的电脑安装了git、curl、nodejs和vim
 
 ## 输入以下内容自动安装(默认是Bash)
 
