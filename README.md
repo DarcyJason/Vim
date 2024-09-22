@@ -1,6 +1,15 @@
 # 使用方法
 
-请确保你的电脑安装了git、curl、nodejs(因为Coc.vim基于Nodejs提供编程语言智能补全与错误检查功能)、npm和vim
+请确保你的电脑安装了git、curl、nvm和vim
+
+## 按顺序输入以下内容安装nvm使用最新版nodejs
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+source ~/.bashrc
+nvm install --lts
+nvm use --lts
+```
 
 ## 输入以下内容自动安装(默认是Bash)
 
