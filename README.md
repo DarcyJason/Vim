@@ -34,3 +34,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 之后编写Rust文件时,遇到自己需要补全的代码就直接按ctrl+y即可补全
 
 其中每个插件都在~/.vimrc中,你可以输入`cat ~/.vimrc`,复制其中的插件并询问AI以获取其快捷键用法
+
+## 推荐安装的有代码补全的语言
+```vim
+:CocInstall coc-clangd coc-java coc-pyright coc-go coc-rust-analyzer coc-html coc-css coc-tsserver
+```
