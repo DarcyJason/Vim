@@ -11,14 +11,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 " 代码片段库
 Plug 'honza/vim-snippets'
-" 贪吃蛇
-Plug 'johngrib/vim-game-snake'
 " 代码注释
 Plug 'preservim/nerdcommenter'
 " 智能补全
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Dash
-Plug 'rizzatti/dash.vim'
 call plug#end()
 
 autocmd vimenter * NERDTree
@@ -46,10 +42,6 @@ set autoindent
 set shiftwidth=2
 
 nmap <silent> <leader>e :CocList diagnostics<CR>
-
-let g:dash_app_path = '/Applications/Dash.app'
-let g:dash_mapping = '<leader>d'
-let g:dash_keyword_filetype_map = { 'c': ['c'], 'cpp': ['cpp', 'boost'], 'java': ['java'], 'python': ['python3', 'django'], 'html': ['html'], 'css': ['css'], 'javascript': ['javascript'], 'go': ['go'], 'rust': ['rust'] }
 
 autocmd BufWritePost * NERDTreeRefreshRoot
 autocmd FocusGained * NERDTreeRefreshRoot
