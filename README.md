@@ -23,3 +23,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 3.等待安装完成后按:qa退出
 
 之后编写Rust文件时,遇到自己需要补全的代码就直接按ctrl+y即可补全
+
+同理安装coc-snippets,可用tab键快速生成框架,例如在html文件中输入link后按下tab键即可补全link标签
+```vim
+:CocInstall coc-snippets
+```
+
+其中每个插件都在~/.vimrc中,你可以输入`cat ~/.vimrc`,复制其中的插件并询问AI以获取其快捷键用法
