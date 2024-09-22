@@ -8,7 +8,7 @@
 cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
 
-## 打开Vim先输入一个冒号再输入以下内容
+## 打开Vim先输入一个:再输入以下内容等待安装完成后输入:qa退出
 ```bash
 CocInstall coc-clangd | CocInstall coc-java | CocInstall coc-pyright | CocInstall coc-go | CocInstall coc-rust-analyzer | CocInstall coc-html | CocInstall coc-css | CocInstall coc-tsserver
 ```
