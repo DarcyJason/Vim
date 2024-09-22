@@ -12,4 +12,4 @@ rm -rf ~/Vim
 
 vim -u ~/.vimrc -c "q"
 
-vim ~/.vimrc -c "source % | PlugInstall | wqa"
+vim ~/.vimrc -c "source % | PlugInstall | CocInstall coc-clangd | CocInstall coc-java | CocInstall coc-pyright | CocInstall coc-go | CocInstall coc-rust-analyzer | CocInstall coc-html | CocInstall coc-css | CocInstall coc-tsserver | wqa"
