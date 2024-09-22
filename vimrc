@@ -7,6 +7,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " 自动补全
 Plug 'jiangmiao/auto-pairs'
+" 代码片段库
+Plug 'honza/vim-snippets'
 " 代码注释
 Plug 'preservim/nerdcommenter'
 " 智能补全
