@@ -9,7 +9,3 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 cp ~/Vim/vimrc ~/.vimrc
 
 rm -rf ~/Vim
-
-vim -u ~/.vimrc -c "q"
-
-vim ~/.vimrc -c "source % | PlugInstall | wqa"
