@@ -49,17 +49,7 @@ nmap <silent> <leader>e :CocList diagnostics<CR>
 
 let g:dash_app_path = '/Applications/Dash.app'
 let g:dash_mapping = '<leader>d'
-let g:dash_keyword_filetype_map = {
-    \ 'c': ['c'],
-    \ 'cpp': ['cpp', 'boost'],
-    \ 'java': ['java'],
-    \ 'python': ['python3', 'django'],
-    \ 'html': ['html'],
-    \ 'css': ['css'],
-    \ 'javascript': ['javascript', 'nodejs'],
-    \ 'go': ['go'],
-    \ 'rust': ['rust']
-    \ }
+let g:dash_keyword_filetype_map = { 'c': ['c'], 'cpp': ['cpp', 'boost'], 'java': ['java'], 'python': ['python3', 'django'], 'html': ['html'], 'css': ['css'], 'javascript': ['javascript', 'nodejs'], 'go': ['go'], 'rust': ['rust'] }
 
 autocmd BufWritePost * NERDTreeRefreshRoot
 autocmd FocusGained * NERDTreeRefreshRoot
