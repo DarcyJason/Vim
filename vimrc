@@ -8,7 +8,7 @@ Plug 'vim-airline/vim-airline-themes'
 " 自动补全
 Plug 'jiangmiao/auto-pairs'
 " 代码片段管理
-Plug 'SirVer/ultisnips'
+Plug 'neoclide/coc-snippets'
 " 代码片段库
 Plug 'honza/vim-snippets'
 " 代码注释
@@ -28,9 +28,9 @@ let g:airline_theme='molokai'
 inoremap <Del> <C-h>
 set backspace=2
 
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : coc#pum#visible() ? coc#pum#next(1) : coc#expandable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" : "\<Tab>"
+inoremap <silent><expr> <S-Tab> pumvisible() ? "\<C-p>" : coc#pum#visible() ? coc#pum#prev(1) : coc#jumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" : "\<S-Tab>"
+nmap <silent> <leader>s :CocCommand snippets.editSnippets<CR>
 
 set encoding=utf-8
 set fileencodings=utf-8,gb2312,gbk,cp936,gb18030,ucs-bom
