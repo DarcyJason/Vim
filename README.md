@@ -8,7 +8,18 @@
 cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
 
-## 安装代码补全功能,打开vim根据你需要的语言进行安装(本作者以Rust为例,需要提前安装好Rust语言环境)
+## 安装代码补全功能,根据你需要的语言进行安装(本作者以Rust为例,需要提前安装好Rust语言环境)
+
+1.安装rust(默认你已经安装了gcc,因为Rust程序编译需要gcc编译器的帮助)
 ```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+2.输入vim打开vim,并输入以下内容进行安装Rust语言的代码补全和分析工具(注意在vim中不能直接粘贴以下内容,需要手动输入:再粘贴CocInstall coc-rust-analyzer)
+```vim
 :CocInstall coc-rust-analyzer
 ```
+
+3.等待安装完成后按:qa退出
+
+之后编写Rust文件时,遇到自己需要补全的代码就直接按ctrl+y即可补全
