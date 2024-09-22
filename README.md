@@ -7,11 +7,3 @@
 ```bash
 cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
-
-## 再执行
-
-```bash
-vim -u ~/.vimrc -c "q"
-
-vim ~/.vimrc -c "source % | PlugInstall | wqa"
-```
