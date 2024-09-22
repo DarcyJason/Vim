@@ -11,5 +11,3 @@ cp ~/Vim/vimrc ~/.vimrc
 rm -rf ~/Vim
 
 vim -u ~/.vimrc -c "PlugInstall | q"
-
-vim -c "CocInstall coc-clangd | CocInstall coc-java | CocInstall coc-pyright | CocInstall coc-go | CocInstall coc-rust-analyzer | CocInstall coc-html | CocInstall coc-css | CocInstall coc-tsserver | qa"
