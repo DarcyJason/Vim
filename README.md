@@ -7,3 +7,8 @@
 ```bash
 cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
+
+## 打开Vim并输入以下内容
+```bash
+:CocInstall coc-clangd | CocInstall coc-java | CocInstall coc-pyright | CocInstall coc-go | CocInstall coc-rust-analyzer | CocInstall coc-html | CocInstall coc-css | CocInstall coc-tsserver | qa
+```
