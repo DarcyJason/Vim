@@ -44,3 +44,5 @@ nmap <silent> <leader>e :CocList diagnostics<CR>
 autocmd BufWritePost * NERDTreeRefreshRoot
 autocmd FocusGained * NERDTreeRefreshRoot
 autocmd BufEnter * if bufname("#") == "NERD_tree_1" | execute ":NERDTreeRefreshRoot" | endif
+
+let g:coc_disable_startup_warning = 1
