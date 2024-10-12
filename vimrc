@@ -111,8 +111,8 @@ nnoremap <F1> :args * \| bd<CR>
 " 显示缓冲区的文件序号
 nnoremap <silent> <F2> :ls<CR>
 
-" 简便运行代码文件
-nnoremap <F3> :DispatchRun<CR>
+" 快速运行代码
+nnoremap <F4> :DispatchRun<CR>
 
 command! DispatchRun call RunCode()
 
@@ -138,10 +138,10 @@ function! RunCode()
 endfunction
 
 " 打开终端窗口
-nnoremap <silent> <F4> :term<CR>
+nnoremap <silent> <F5> :term<CR>
 
 " 打开变量和函数的列表
-nnoremap <F5> :TagbarToggle<CR>
+nnoremap <F6> :TagbarToggle<CR>
 
 " 放大/恢复窗口
-nnoremap <F6> :MaximizerToggle<CR>
+nnoremap <F7> :MaximizerToggle<CR>
