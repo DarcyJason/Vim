@@ -2,6 +2,27 @@
 
 请确保你的电脑安装了git、curl、nvm、universal-ctags、nerd字体和vim;
 
+## For Debian
+```bash
+apt install vim git curl wget universal-ctags -y
+```
+## For macOS
+```bash
+brew install vim git curl universal-ctags
+```
+
+## 安装NERD FONTS
+```bash
+cd /tmp
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CommitMono.zip
+unzip CommitMono.zip -d CommitMono
+sudo mkdir -p /usr/local/share/fonts/NerdFonts
+sudo cp CommitMono/*.ttf /usr/local/share/fonts/NerdFonts/
+fc-cache -fv
+// 检验是否成功
+fc-list | grep "CommitMono Nerd Font"
+```
+
 ## 按顺序输入以下内容安装nvm使用最新版nodejs
 
 ```bash
