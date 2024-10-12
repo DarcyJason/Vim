@@ -1,6 +1,6 @@
 # 使用方法
 
-请确保你的电脑安装了git、curl、nvm和vim
+请确保你的电脑安装了git、curl、nvm、universal-ctags、nerd字体和vim;
 
 ## 按顺序输入以下内容安装nvm使用最新版nodejs
 
