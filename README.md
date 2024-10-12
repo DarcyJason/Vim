@@ -1,14 +1,14 @@
-# 使用方法
-
-请确保你的电脑安装了git、curl、nvm、universal-ctags、nerd字体和vim;
+# 安装方法
 
 ## For Debian
+
 ```bash
-apt install vim git curl wget universal-ctags -y
+apt install vim git curl wget universal-ctags clangd llvm -y
 ```
 ## For macOS
+
 ```bash
-brew install vim git curl wget universal-ctags
+brew install vim git curl wget universal-ctags clangd llvm
 ```
 
 ## 按顺序输入以下内容安装nvm使用最新版nodejs
@@ -27,6 +27,7 @@ cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
 
 ## 推荐安装的有代码补全的语言
+
 ```vim
 :CocInstall coc-clangd coc-java coc-pyright coc-go coc-rust-analyzer coc-html coc-css coc-tsserver coc-snippets
 ```
