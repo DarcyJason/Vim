@@ -28,5 +28,5 @@ cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 
 ## 推荐安装的有代码补全的语言
 ```vim
-:CocInstall coc-clangd coc-java coc-pyright coc-go coc-rust-analyzer coc-html coc-css coc-tsserver
+:CocInstall coc-clangd coc-java coc-pyright coc-go coc-rust-analyzer coc-html coc-css coc-tsserver coc-snippets
 ```
