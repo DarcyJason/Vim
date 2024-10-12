@@ -8,19 +8,7 @@ apt install vim git curl wget universal-ctags -y
 ```
 ## For macOS
 ```bash
-brew install vim git curl universal-ctags
-```
-
-## 安装NERD FONTS
-```bash
-cd /tmp
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CommitMono.zip
-unzip CommitMono.zip -d CommitMono
-sudo mkdir -p /usr/local/share/fonts/NerdFonts
-sudo cp CommitMono/*.ttf /usr/local/share/fonts/NerdFonts/
-fc-cache -fv
-// 检验是否成功
-fc-list | grep "CommitMono Nerd Font"
+brew install vim git curl wget universal-ctags
 ```
 
 ## 按顺序输入以下内容安装nvm使用最新版nodejs
@@ -37,24 +25,6 @@ nvm use --lts
 ```bash
 cd ~ && git clone https://github.com/DarcyJason/Vim.git && bash ~/Vim/install.sh
 ```
-
-## 安装代码补全功能,根据你需要的语言进行安装(本作者以Rust为例,需要提前安装好Rust语言环境)
-
-1.安装rust(默认你已经安装了gcc,因为Rust程序编译需要gcc编译器的帮助)
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
-2.输入vim打开vim,并输入以下内容进行安装Rust语言的代码补全和分析工具(注意在vim中不能直接粘贴以下内容,需要手动输入:再粘贴CocInstall coc-rust-analyzer)
-```vim
-:CocInstall coc-rust-analyzer
-```
-
-3.等待安装完成后按:qa退出
-
-之后编写Rust文件时,遇到自己需要补全的代码就直接按ctrl+y即可补全
-
-其中每个插件都在~/.vimrc中,你可以输入`cat ~/.vimrc`,复制其中的插件并询问AI以获取其快捷键用法
 
 ## 推荐安装的有代码补全的语言
 ```vim
