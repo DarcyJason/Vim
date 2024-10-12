@@ -1,8 +1,12 @@
 call plug#begin('~/.vim/plugged')
 " 文件系统浏览器
 Plug 'preservim/nerdtree'
+" 文件类型图标
+Plug 'ryanoasis/vim-devicons'
 " 状态栏
 Plug 'vim-airline/vim-airline'
+" 查看变量和函数列表
+Plug 'preservim/tagbar'
 " 主题
 Plug 'vim-airline/vim-airline-themes'
 " 自动补全
@@ -15,7 +19,12 @@ Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " 一键运行
 Plug 'tpope/vim-dispatch'
-
+" 自动保存文件
+Plug '907th/vim-auto-save'
+" Vim中文手册
+Plug 'yianwillis/vimcdoc'
+" 放大窗口
+Plug 'szw/vim-maximizer'
 call plug#end()
 
 " 自动打开文件目录导航栏
@@ -84,8 +93,20 @@ autocmd BufEnter * if bufname("#") == "NERD_tree_1" | execute ":NERDTreeRefreshR
 " 禁用 Coc.nvim 启动时的警告信息
 let g:coc_disable_startup_warning = 1
 
+" 光标所在行设置下划线
+set cursorline
+
+" 启用鼠标
+set mouse=a  
+
+"自动保存文件
+let g:auto_save = 1
+
+" 与系统剪切版同步
+set clipboard=unnamedplus
+
 " 将该文件夹内的文件载入缓冲区
-nnoremap <F1> :args *<CR>
+nnoremap <F1> :args * \| bd<CR>
 
 " 显示缓冲区的文件序号
 nnoremap <silent> <F2> :ls<CR>
@@ -116,5 +137,11 @@ function! RunCode()
     endif
 endfunction
 
-" 打开vim终端窗口
+" 打开终端窗口
 nnoremap <silent> <F4> :term<CR>
+
+" 打开变量和函数的列表
+nnoremap <F5> :TagbarToggle<CR>
+
+" 放大/恢复窗口
+nnoremap <F6> :MaximizerToggle<CR>
