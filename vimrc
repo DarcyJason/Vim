@@ -1,8 +1,6 @@
 call plug#begin('~/.vim/plugged')
 " 文件系统浏览器
 Plug 'preservim/nerdtree'
-" 文件类型图标
-Plug 'ryanoasis/vim-devicons'
 " 状态栏
 Plug 'vim-airline/vim-airline'
 " 查看变量和函数列表
