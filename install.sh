@@ -24,4 +24,4 @@ rm -rf ~/Vim
 
 vim -u ~/.vimrc -c "PlugInstall | q"
 
-vim -c "CocInstall coc-clangd coc-java coc-pyright coc-go coc-rust-analyzer coc-html coc-css coc-tsserver coc-snippets | q"
+vim -es -c "CocInstall coc-clangd coc-java coc-pyright coc-go coc-rust-analyzer coc-html coc-css coc-tsserver coc-snippets | qall"
