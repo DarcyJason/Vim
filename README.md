@@ -5,13 +5,13 @@
 ### For macOS
 
 ```bash
-brew update && brew install curl git wget universal-ctags clangd llvm
+brew update && brew install curl git wget universal-ctags clangd llvm vim
 ```
 
 ### For Debian
 
 ```bash
-apt update &&apt install curl git wget universal-ctags clangd llvm -y 
+apt update &&apt install curl git wget universal-ctags clangd llvm vim -y 
 ```
 
 ## 2. 输入以下内容自动安装(默认是Bash)
