@@ -94,14 +94,8 @@ let g:coc_disable_startup_warning = 1
 " 光标所在行设置下划线
 set cursorline
 
-" 启用鼠标
-set mouse=a  
-
 "自动保存文件
 let g:auto_save = 1
-
-" 与系统剪切版同步
-set clipboard=unnamedplus
 
 " F1 显示缓冲区的文件序号
 nnoremap <silent> <F1> :ls<CR>
@@ -132,11 +126,11 @@ function! RunCode()
     endif
 endfunction
 
-" F3 放大当前窗口
+" F3 放大或恢复窗口
 
-" F4 打开终端窗口
+" F5 打开终端窗口
 nnoremap <silent> <F4> :term<CR>
 
-" F5 打开变量和函数的列表
+" F6 打开变量和函数的列表
 nnoremap <F5> :TagbarToggle<CR>
 
