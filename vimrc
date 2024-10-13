@@ -103,15 +103,11 @@ let g:auto_save = 1
 " 与系统剪切版同步
 set clipboard=unnamedplus
 
-" F1 将该文件夹内的文件载入缓冲区
-nnoremap <F1> :args * \| bd<CR>
-
-" F2 显示缓冲区的文件序号
+" F1 显示缓冲区的文件序号
 nnoremap <silent> <F2> :ls<CR>
 
-" F3 放大当前窗口
-" F4 快速运行代码
-nnoremap <F4> :DispatchRun<CR>
+" F2 快速运行代码
+nnoremap <F2> :DispatchRun<CR>
 
 command! DispatchRun call RunCode()
 
@@ -136,9 +132,11 @@ function! RunCode()
     endif
 endfunction
 
-" F5 打开终端窗口
+" F3 放大当前窗口
+
+" F4 打开终端窗口
 nnoremap <silent> <F5> :term<CR>
 
-" F6 打开变量和函数的列表
+" F5 打开变量和函数的列表
 nnoremap <F6> :TagbarToggle<CR>
 
