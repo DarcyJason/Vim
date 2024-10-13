@@ -2,14 +2,6 @@
 
 rm -rf ~/.vimrc
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-
-source ~/.bashrc
-
-nvm install --lts
-
-nvm use --lts
-
 cd && git clone https://github.com/DarcyJason/Vim.git
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
