@@ -6,12 +6,14 @@
 
 ```bash
 brew update && brew install curl git wget universal-ctags clangd llvm vim
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash && source ~/.bashrc && nvm install --lts && nvm use --lts
 ```
 
 ### For Debian
 
 ```bash
-apt update &&apt install curl git wget universal-ctags clangd llvm vim -y 
+apt update &&apt install curl git wget universal-ctags clangd llvm vim -y
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash && source ~/.bashrc && nvm install --lts && nvm use --lts
 ```
 
 ## 2. 输入以下内容自动安装(默认是Bash)
