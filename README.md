@@ -5,13 +5,13 @@
 ### For macOS
 
 ```bash
-brew install curl
+brew update && brew install curl
 ```
 
 ### For Debian
 
 ```bash
-apt install curl
+apt update &&apt install curl
 ```
 
 ## 输入以下内容自动安装(默认是Bash)
