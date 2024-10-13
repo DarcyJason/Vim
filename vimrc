@@ -104,7 +104,7 @@ let g:auto_save = 1
 set clipboard=unnamedplus
 
 " F1 显示缓冲区的文件序号
-nnoremap <silent> <F2> :ls<CR>
+nnoremap <silent> <F1> :ls<CR>
 
 " F2 快速运行代码
 nnoremap <F2> :DispatchRun<CR>
