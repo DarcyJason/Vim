@@ -2,9 +2,7 @@
 
 rm -rf ~/.vimrc
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-brew install vim git curl wget universal-ctags clangd llvm
+brew install vim curl wget universal-ctags clangd llvm
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
