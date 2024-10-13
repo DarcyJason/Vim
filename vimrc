@@ -135,8 +135,8 @@ endfunction
 " F3 放大当前窗口
 
 " F4 打开终端窗口
-nnoremap <silent> <F5> :term<CR>
+nnoremap <silent> <F4> :term<CR>
 
 " F5 打开变量和函数的列表
-nnoremap <F6> :TagbarToggle<CR>
+nnoremap <F5> :TagbarToggle<CR>
 
